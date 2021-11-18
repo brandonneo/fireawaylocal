@@ -3,7 +3,7 @@ pipeline {
  stages {
  stage ('Checkout') {
  steps {
- git branch:'main', url: 'https://github.com/brandonneo/testing.git'
+ git branch:'main', url: 'https://github.com/brandonneo/fireawaylocal.git'
  }
  }
 
