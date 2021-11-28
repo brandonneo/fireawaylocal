@@ -1,8 +1,8 @@
 pipeline {
 	 agent any
-	 
+
 	 tools {nodejs "node_v10"}
-	 
+
 	 stages {
 	 stage ('Checkout') {
 		steps {
@@ -20,7 +20,7 @@ pipeline {
  script {
  def scannerHome = tool 'SonarQube';
  withSonarQubeEnv('SonarQube') {
- sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=OWSAP2 -Dsonar.sources=."
+ sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=OWSAP -Dsonar.sources=."
  }
  }
  }
