@@ -7,11 +7,6 @@ pipeline {
 	 git branch:'main', url: 'https://github.com/brandonneo/fireawaylocal.git'
 	 }
  }
-      stage('Install Typescript') {
-        steps {
-           sh 'npm install typescript'
-            }
-         }
 
  stage('Code Quality Check via SonarQube') {
  steps {
