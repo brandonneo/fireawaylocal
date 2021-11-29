@@ -1,6 +1,6 @@
 pipeline {
 	 agent any
-	 tools {nodejs "node_v10"}
+
 	 stages {
 	 stage ('Checkout') {
 		steps {
