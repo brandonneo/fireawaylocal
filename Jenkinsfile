@@ -6,6 +6,11 @@ pipeline {
 	 git branch:'main', url: 'https://github.com/brandonneo/fireawaylocal.git'
 	 }
  }
+ agent {
+			docker {
+				image 'node:10.11.0-alpine'
+			}
+	 }
       stage('Install Typescript') {
         steps {
            sh 'npm install typescript'
